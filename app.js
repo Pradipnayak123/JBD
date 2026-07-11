@@ -35,9 +35,50 @@
 // }
 
 
-let Day02 = {
-    name :"Javascript",
-    topic:"Object in js",
-    status:"200"
-};
-console.log(Day02)
+// let Day_03 = {
+//     name :"Javascript",
+//     topic:"Number Guessing Game",
+//     status:"200"
+// };
+// console.log(Day02)
+
+
+
+
+
+
+
+
+
+
+//  let random = Math.floor(Math.random()*100) + 1;
+
+
+//Guessing Game 
+let number = prompt("Please Enter a Number from 1 to 10");
+const comp = Math.floor(Math.random()*10) + 1
+
+while(true){
+    if(number == "quit"){
+        break;
+    }
+
+if(number == comp){
+    console.log("You Guessed The Number that is ",comp);
+    break;
+}
+else if(comp<number){
+    console.log("You Entered Big Number Make it Small");
+    number = prompt("Opss! Please Try Again and Make it Small  ");
+
+}
+else if(comp>number){
+    console.log("You Entered small Number Make it big");
+    number = prompt("Opss! Please Try Again and Make it Big ");
+
+}
+
+
+
+
+}
