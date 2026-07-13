@@ -55,30 +55,128 @@
 
 
 //Guessing Game 
-let number = prompt("Please Enter a Number from 1 to 10");
-const comp = Math.floor(Math.random()*10) + 1
+// let number = prompt("Please Enter a Number from 1 to 10");
+// const comp = Math.floor(Math.random()*10) + 1
 
-while(true){
-    if(number == "quit"){
-        break;
+// while(true){
+//     if(number == "quit"){
+//         break;
+//     }
+
+// if(number == comp){
+//     console.log("You Guessed The Number that is ",comp);
+//     break;
+// }
+// else if(comp<number){
+//     console.log("You Entered Big Number Make it Small");
+//     number = prompt("Opss! Please Try Again and Make it Small  ");
+
+// }
+// else if(comp>number){
+//     console.log("You Entered small Number Make it big");
+//     number = prompt("Opss! Please Try Again and Make it Big ");
+
+// }
+
+
+
+
+// }
+
+
+// ! Function 
+
+function hello () {
+console.log("Hello");
+
+}
+// hello();
+
+// function dice(){
+//     console.log(Math.floor(Math.random()*6)+1)
+// }
+
+// dice();
+// dice();
+// dice();
+// dice();
+// dice();
+// dice();
+// dice();
+
+
+
+//?* Function With Argu
+
+
+// function myName(name){
+//     console.log(name);
+    
+// }
+
+// myName(prompt("Please Enter Your Name :"))
+
+
+//* Average of Three Number
+
+// function avg( a,b,c){
+//     let avg = (a+b+c)/3;
+//     console.log(`The Average of a ,b and c is ${avg}`);
+    
+// }
+
+// avg(10,20,30);
+
+
+//* Function For Multiplication table
+
+function multiTable(x){
+    let res;
+    for(let i = 1;i<=10;i++){
+         res = i * x;
+        console.log(`${x} x ${i} = ${res}`);
     }
-
-if(number == comp){
-    console.log("You Guessed The Number that is ",comp);
-    break;
-}
-else if(comp<number){
-    console.log("You Entered Big Number Make it Small");
-    number = prompt("Opss! Please Try Again and Make it Small  ");
-
-}
-else if(comp>number){
-    console.log("You Entered small Number Make it big");
-    number = prompt("Opss! Please Try Again and Make it Big ");
-
+        
 }
 
+// multiTable(2);
 
 
+//? Function With Return 
+
+
+function sum(a,b){
+    return a + b;
+    
+}
+
+// sum (sum(1,2),3);
+
+
+//?  Function to cal sum of 1 to n
+
+function sumSpc(n){
+    let sum = 0;
+    for(let i = 0;i<=n;i++){
+         sum = sum + i;
+    }
+    return sum;
+    
+
+}
+// sumSpc(5);
+
+//? Function That Concatinate The Entire Array
+
+
+let arr = ["hello", "Everyone","This","is","Pradip"];
+
+
+function conca(arr){
+    let result = "";
+for(let i = 0; i < arr.length; i++){
+    result += arr[i];
+}
+return result;
 
 }
