@@ -1,3 +1,15 @@
+Day_04 = {
+  subject:"Javascript",
+  topic:"Array Methods",
+  id:1309,
+  status:200
+}
+
+
+
+
+
+
 // let todo = [];
 // let req = prompt("Please Enter Your Request:");
 
@@ -28,12 +40,11 @@
 //     }
 //     else{
 //         console.log("Wrong Request");
-        
+
 //     }
 
 //     req = prompt("Please Enter Your Request:").toLowerCase();
 // }
-
 
 // let Day_03 = {
 //     name :"Javascript",
@@ -42,19 +53,9 @@
 // };
 // console.log(Day02)
 
-
-
-
-
-
-
-
-
-
 //  let random = Math.floor(Math.random()*100) + 1;
 
-
-//Guessing Game 
+//Guessing Game
 // let number = prompt("Please Enter a Number from 1 to 10");
 // const comp = Math.floor(Math.random()*10) + 1
 
@@ -78,17 +79,12 @@
 
 // }
 
-
-
-
 // }
 
+// ! Function
 
-// ! Function 
-
-function hello () {
-console.log("Hello");
-
+function hello() {
+  console.log("Hello");
 }
 // hello();
 
@@ -104,79 +100,240 @@ console.log("Hello");
 // dice();
 // dice();
 
-
-
 //?* Function With Argu
-
 
 // function myName(name){
 //     console.log(name);
-    
+
 // }
 
 // myName(prompt("Please Enter Your Name :"))
-
 
 //* Average of Three Number
 
 // function avg( a,b,c){
 //     let avg = (a+b+c)/3;
 //     console.log(`The Average of a ,b and c is ${avg}`);
-    
+
 // }
 
 // avg(10,20,30);
 
-
 //* Function For Multiplication table
 
-function multiTable(x){
-    let res;
-    for(let i = 1;i<=10;i++){
-         res = i * x;
-        console.log(`${x} x ${i} = ${res}`);
-    }
-        
+function multiTable(x) {
+  let res;
+  for (let i = 1; i <= 10; i++) {
+    res = i * x;
+    console.log(`${x} x ${i} = ${res}`);
+  }
 }
 
 // multiTable(2);
 
+//? Function With Return
 
-//? Function With Return 
-
-
-function sum(a,b){
-    return a + b;
-    
+function sum(a, b) {
+  return a + b;
 }
 
 // sum (sum(1,2),3);
 
-
 //?  Function to cal sum of 1 to n
 
-function sumSpc(n){
-    let sum = 0;
-    for(let i = 0;i<=n;i++){
-         sum = sum + i;
-    }
-    return sum;
-    
-
+function sumSpc(n) {
+  let sum = 0;
+  for (let i = 0; i <= n; i++) {
+    sum = sum + i;
+  }
+  return sum;
 }
 // sumSpc(5);
 
 //? Function That Concatinate The Entire Array
 
+// let arr = ["hello", "Everyone","This","is","Pradip"];
 
-let arr = ["hello", "Everyone","This","is","Pradip"];
+// function conca(arr){
+//     let result = "";
+// for(let i = 0; i < arr.length; i++){
+//     result += arr[i];
+// }
+// return result;
+
+// }
+
+//? This Keyword
+
+// const std = {
+//     name :"Pradip",
+//     age: 19,
+//     eng :95,
+//     math :89,
+//     phy:99,
+//     getAvg(){
+//         let avg = (this.eng + this.math + this.phy)/3;
+//         console.log(avg);
+
+//     }
+
+// }
+
+//? try and Catch
+
+// try{
+//     console.log(a);
+// } catch(err){
+//     console.log("Yarr a is Not Defined Broooo");
+// }
+
+// const sum = (a,b)=>{
+// a+b;
+// }
+
+//? Set Time Out Function
+
+// setTimeout(()=>{
+// console.log("Hello js!");
+
+// },5000);
+
+//? SetInterval Function
+
+// let id = setInterval(()=>{
+// console.log("Hello js!");
+
+// },3000);
+
+// let id2 = setInterval(()=>{
+// console.log("i am There");
+
+// },4000);
+
+//? this Keyword in Arrow Function
+
+// const std = {
+//   name: "Pradip",
+//   age: 19,
+//   mark: 95,
+//   prop: this,
+//   getName: function () {
+//     console.log(this);
+//     return this.name;
+//   },
+//   getmarks: () => {
+//     console.log(this);
+//     return this.name;
+//   },
+// };
 
 
-function conca(arr){
-    let result = "";
-for(let i = 0; i < arr.length; i++){
-    result += arr[i];
+// let hw = setInterval(()=>{
+//     console.log("Hello World!");
+    
+// },2000);
+
+// setTimeout(()=>{
+// clearInterval(hw);
+// },10000);
+
+
+
+//? for_each 
+
+//  let arr = [1,2,3,4,5];
+
+//  function print(el){
+//   console.log(el);
+  
+//  }
+
+
+
+// arr.forEach(print);
+
+
+// let std = [
+//   {
+//     name:"Pradip",
+//     marks:98
+//   },
+//   {
+//     name:"Pratap",
+//     marks:92.04
+//   },
+//   {
+//     name:"Punam",
+//     marks:89.05
+//   }
+// ]
+
+// arr.forEach((std)=>{
+//   console.log(std.marks);
+  
+// })
+
+// let num = [1,2,3,4,5];
+
+// let double = num.map((el)=>{
+//   return el*2;
+  
+// })
+
+// let gpa = std.map((el)=>{
+//   return el.marks /10;
+// })
+
+
+//? Filter 
+
+// let arr = [1,2,3,4,5,6,7,8,9,];
+
+// let even = arr.filter((el)=>{
+//   return el % 2 == 0;
+// })
+
+// [1,2,3,4].reduce((res,el)=>{return res + el})
+
+// let num = [1,2,3,4];
+
+// let finalVal = num.reduce((res,el)=>{
+//   console.log(res);
+  
+//   return res + el;
+// })
+// console.log(finalVal);
+
+
+//? Maximum Element in an Array using reduce Method
+
+
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+// let max = arr.reduce((max,el)=>{
+//   if(max<el){
+//     return el;
+//   }
+//   else{
+//     return max;
+//   }
+// })
+// console.log(max);
+
+
+// //? Multiple of 10 or Not
+
+
+// let num = [10,20,10,20,120,30];
+
+// let div = num.every((el)=>{
+//   return el%10==0
+// })
+
+
+
+//? Default Parameter
+
+let fun = function(a,b=3){
+  return a+b;
 }
-return result;
 
-}
