@@ -1,9 +1,9 @@
-// Day_04 = {
-//   subject:"Javascript",
-//   topic:"Array Methods",
-//   id:1309,
-//   status:200
-// };
+Day_04 = {
+  subject:"Javascript",
+  topic:"DOM Intro",
+  id:1309,
+  status:200
+};
 
 
 
@@ -422,12 +422,21 @@
 //? Destructing in Objects
 
 
-let std = {
-  name:"Pradip",
-  Branch:"CSE(AI)",
-  regd_no:2501432439,
-  subject:["DataTransfer","Development","Physics","Maths"],
-  username:"@pradip"
-};
+// let std = {
+//   name:"Pradip",
+//   Branch:"CSE(AI)",
+//   regd_no:2501432439,
+//   subject:["DataTransfer","Development","Physics","Maths"],
+//   username:"@pradip"
+// };
 
-let{username,subject} = std;
+// let{username,subject} = std;
+
+
+
+
+//!_________________________----DOM----_________________________________
+
+
+
+
