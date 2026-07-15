@@ -1,9 +1,9 @@
-Day_04 = {
-  subject:"Javascript",
-  topic:"Array Methods",
-  id:1309,
-  status:200
-}
+// Day_04 = {
+//   subject:"Javascript",
+//   topic:"Array Methods",
+//   id:1309,
+//   status:200
+// };
 
 
 
@@ -83,9 +83,9 @@ Day_04 = {
 
 // ! Function
 
-function hello() {
-  console.log("Hello");
-}
+// function hello() {
+//   console.log("Hello");
+// }
 // hello();
 
 // function dice(){
@@ -121,33 +121,33 @@ function hello() {
 
 //* Function For Multiplication table
 
-function multiTable(x) {
-  let res;
-  for (let i = 1; i <= 10; i++) {
-    res = i * x;
-    console.log(`${x} x ${i} = ${res}`);
-  }
-}
+// function multiTable(x) {
+//   let res;
+//   for (let i = 1; i <= 10; i++) {
+//     res = i * x;
+//     console.log(`${x} x ${i} = ${res}`);
+//   }
+// }
 
 // multiTable(2);
 
 //? Function With Return
 
-function sum(a, b) {
-  return a + b;
-}
+// function sum(a, b) {
+//   return a + b;
+// }
 
 // sum (sum(1,2),3);
 
 //?  Function to cal sum of 1 to n
 
-function sumSpc(n) {
-  let sum = 0;
-  for (let i = 0; i <= n; i++) {
-    sum = sum + i;
-  }
-  return sum;
-}
+// function sumSpc(n) {
+//   let sum = 0;
+//   for (let i = 0; i <= n; i++) {
+//     sum = sum + i;
+//   }
+//   return sum;
+// }
 // sumSpc(5);
 
 //? Function That Concatinate The Entire Array
@@ -333,7 +333,101 @@ function sumSpc(n) {
 
 //? Default Parameter
 
-let fun = function(a,b=3){
-  return a+b;
-}
+// let fun = function(a,b=3){
+//   return a+b;
+// }
 
+
+
+//? Sprade
+
+
+// let nums = [1,2,3,4,5,6,7,8,9,0,4,5];
+
+// Math.min(...arr);
+
+
+//? Sprade with Array Literals
+
+// let arr = [1,2,3,4,56,7];
+
+// let newArr = [...arr];
+// console.log(arr);
+// console.log(newArr);
+
+
+
+//? Sprade with Object Literals
+
+
+
+
+// let data = {
+//   name:"Pradip",
+//   rollNo:40,
+//   marks:98
+// };
+
+// let newData = {...data,id:234}
+
+// console.log(data);
+// console.log(newData);
+
+
+
+
+//? Rest 
+
+
+
+// let sum = function(...args){
+//   for(let i = 0;i<args.length;i++){
+//   console.log("You give us ",args[i]);
+//   }
+  
+// }
+
+
+// function sum(...args){
+//   console.log(args);
+//   return args.reduce((res,el)=>res+el);
+  
+// }
+
+
+
+// function min(msg,...args){
+// console.log(msg);
+// return args.reduce((res,el)=>{
+//   if(res>el){
+//     return el
+//   }
+//   else{
+//     return res;
+//   }
+// })
+
+// }
+
+
+
+
+//? Destructing in Array
+
+
+// let arr = ["Pradip","Kumar","Shakti","Nandan"];
+
+// let [winner,runnerup] = arr;
+
+//? Destructing in Objects
+
+
+let std = {
+  name:"Pradip",
+  Branch:"CSE(AI)",
+  regd_no:2501432439,
+  subject:["DataTransfer","Development","Physics","Maths"],
+  username:"@pradip"
+};
+
+let{username,subject} = std;
