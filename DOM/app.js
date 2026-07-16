@@ -449,8 +449,15 @@ console.log("JavaScript Loaded");
 
 
 
-let links = document.querySelectorAll(".box a");
+// let links = document.querySelectorAll(".box a");
 
-for (let i = 0; i < links.length; i++) {
-    links[i].style.color = "yellow";
-}
+// for (let i = 0; i < links.length; i++) {
+//     links[i].style.color = "green";
+// }
+
+// for(link of links){
+//     link.style.color = "green";
+// }
+
+
+
