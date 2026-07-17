@@ -1,4 +1,7 @@
-/* Google Font */
+/* 
+
+
+Google Font
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
@@ -15,7 +18,7 @@ body{
     padding: 40px;
 }
 
-/* Heading */
+
 
 h1{
     text-align: center;
@@ -38,7 +41,7 @@ h4{
     color: #fff;
 }
 
-/* Main Image */
+
 
 #mainImg{
     display: flex;
@@ -60,7 +63,7 @@ h4{
     transform: scale(1.02);
 }
 
-/* Paragraph */
+
 
 p{
     margin-top: 15px;
@@ -78,7 +81,7 @@ a:hover{
     text-decoration: underline;
 }
 
-/* Info Box */
+
 
 .box{
     width: 340px;
@@ -109,13 +112,12 @@ a:hover{
     font-weight: 600;
 }
 
-/* Description */
 
 #description{
     margin-top: 15px;
 }
 
-/* Images Section */
+
 
 .images{
     display: flex;
@@ -139,7 +141,7 @@ a:hover{
     transform: translateY(-10px) scale(1.04);
 }
 
-/* Responsive */
+
 
 @media(max-width:768px){
 
@@ -172,3 +174,22 @@ a:hover{
   justify-content: space-around;
   margin-top: 20px;
 }
+
+
+.iron{
+    color: green;
+}
+
+.temPara{
+    color: green;
+    text-align: center;
+}
+.temp{
+    color: rgb(78, 76, 76);
+
+}
+ */
+
+ .new{
+    color: red;
+ }
