@@ -193,3 +193,13 @@ a:hover{
  .new{
     color: red;
  }
+ .h3_c{
+    color: blue;
+ }
+ .newDiv{
+    border: 2px solid black;
+    background-color: pink;
+    /* height: 100px;
+    width: 100px; */
+    text-align: center;
+ }

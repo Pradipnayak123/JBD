@@ -436,21 +436,3 @@ console.log("JavaScript Loaded");
 // };
 
 // let{username,subject} = std;
-
-
-
-
-//!_________________________----DOM----_________________________________
-
-
-
-// console.dir(document.querySelector("div a"));
-
-
-
-
-let links = document.querySelectorAll(".box a");
-
-for (let i = 0; i < links.length; i++) {
-    links[i].style.color = "yellow";
-}

@@ -461,3 +461,34 @@ console.log("JavaScript Loaded");
 
 
 
+//? Practice Question
+
+
+
+
+let  para = document.createElement('p');
+para.innerText = "Hey I'm Red";
+document.querySelector('body').append(para)
+
+para.classList.add('new');
+
+let h3 = document.createElement('h3');
+h3.innerText = "I'm a Blue h3!";
+document.querySelector('body').append(h3)
+
+h3.classList.add('h3_c');
+
+
+
+let newDiv = document.createElement('div');
+let h1 = document.createElement('h1');
+let para2 = document.createElement('p');
+
+h1.innerText = "I'm in a Div";
+para2.innerText  = "ME TOO!"
+
+newDiv.append(h1);
+newDiv.append(para2);
+document.querySelector('body').append(newDiv);
+newDiv.classList.add("newDiv");
+
