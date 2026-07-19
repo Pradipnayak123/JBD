@@ -3,12 +3,12 @@ console.log("JavaScript Loaded");
 
 
 
-// Day_05 = {
-//   subject:"Javascript",
-//   topic:"DOM Intro",
-//   id:1309,
-//   status:200
-// };
+Day_06 = {
+  subject:"Javascript",
+  topic:"DOM Logics",
+  id:1309,
+  status:200
+};
 
 
 
