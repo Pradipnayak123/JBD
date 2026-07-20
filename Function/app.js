@@ -126,7 +126,7 @@ Day_06 = {
 
 //* Function For Multiplication table
 
-// function multiTable(x) {
+// function multiTable(x) { 
 //   let res;
 //   for (let i = 1; i <= 10; i++) {
 //     res = i * x;

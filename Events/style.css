@@ -1,4 +1,4 @@
-h3{
+/* h3{
     text-align: center;
 }
 button{
@@ -19,4 +19,23 @@ button{
   text-align: center;
    
     
-}
+} */
+ *{
+    padding: 0;
+    margin: 0;
+ }
+ body{
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ #form{
+    padding: 20px;
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+ }
