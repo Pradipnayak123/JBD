@@ -3,12 +3,12 @@ console.log("JavaScript Loaded");
 
 
 
-// Day_05 = {
-//   subject:"Javascript",
-//   topic:"DOM Intro",
-//   id:1309,
-//   status:200
-// };
+Day_10 = {
+  subject:" Advance Javascript",
+  topic:"Async await and APIs",
+  id:123010,
+  status:200
+};
 
 
 
