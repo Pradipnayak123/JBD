@@ -1,0 +1,153 @@
+/* .container{
+    height: 300px;
+    width: 80%;
+    background-color:azure;
+    margin:10px auto;
+    border:2px solid black;
+    display: flex;
+    flex-direction:row; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* align-content:flex-start; */
+
+/* }
+h1{
+    text-align: center;
+}
+#red{ */
+    /* align-self: flex-end;
+    flex-basis: 80px; */
+    /* flex-grow: 2; */
+    /* flex-shrink: 1; */
+    /* flex: 2 1 100px;
+} */
+/* #green{
+    flex-grow: 1; */
+    /* flex-shrink: 5; */
+/* }
+.container div{
+    height: 100px;
+    width: 50px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+} */
+
+
+
+
+
+/* .container{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+   margin: 10px auto;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   align-items: center;
+}
+.box{
+    background-color: rgb(44, 48, 51);
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: gray;
+    border: 2px solid black;
+    font-size: 50px;
+}
+h1{
+    text-align: center;
+} */
+
+
+
+
+/* 
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(187, 172, 172);
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 100px 100px 100px 100px;
+    /* row-gap:10px ;
+    column-gap: 10px; */
+    /* grid-gap: 10px; */
+    /* justify-content:center; */
+    /* place-items:c ; */
+/* } */
+
+/* #one{ */
+    /* grid-column: 1/4;
+     */
+     /* justify-self: end; */
+/* } */
+/* 
+.item{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(56, 82, 114);
+    border: 2px solid black;
+    text-align: center;
+} */ 
+
+
+/* h1{
+    text-align: center;
+}
+
+.box{
+    height: 100px;
+    width: 200px;
+    background-color: pink;
+    text-align: center;
+    animation-name: fontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+
+}
+@keyframe fontAnimation{
+    from{
+        font-size:20px;
+    }
+    
+    to{
+        font-size:40px;
+    }
+} */
+
+
+h1{
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+@media (width: 400px){
+    h1{
+        background-color: red;
+    }
+}
+
+@media (min-width:400px){
+    h1{
+        background-color: aqua;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 300px ) {
+    h1{
+        background-color: pink;
+    }
+    
+}
+@media (orientation: landscape){
+    h1{
+        background-color: magenta;
+        color: white;
+    }
+}

@@ -3,9 +3,9 @@ console.log("JavaScript Loaded");
 
 
 
-Day_10 = {
-  subject:" Advance Javascript",
-  topic:"Async await and APIs",
+Day_12 = {
+  subject:" Terminal",
+  topic:"Commands",
   id:123010,
   status:200
 };

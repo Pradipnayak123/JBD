@@ -109,39 +109,138 @@
 
 
 
-let url = "https://catfact.ninja/fact";
+// let url = "https://catfact.ninja/fact";
 
-// fetch(url)
-// .then((response)=>{
-//     console.log(response);
-//   return response.json()
+// // fetch(url)
+// // .then((response)=>{
+// //     console.log(response);
+// //   return response.json()
     
     
-// })
-// .then((data)=>{
+// // })
+// // .then((data)=>{
+// //     console.log(data.fact);
+// //     return fetch(url);
+// // })
+// // .then((response)=>{
+// //    return response.json();
+// // })
+// // .then((data2)=>{
+// //     console.log(data2.fact);
+    
+// // })
+// // .catch((err)=>{
+// //     console.log("Error:  ",err);
+    
+// // })
+// async function getFact(){
+//     try{
+//     let res = await fetch(url);
+//     let data =  await res.json();
 //     console.log(data.fact);
-//     return fetch(url);
-// })
-// .then((response)=>{
-//    return response.json();
-// })
-// .then((data2)=>{
-//     console.log(data2.fact);
+//     }catch(err){
+//         console.log(err);
+        
+//     }
+//     console.log("Bye....................");
     
-// })
-// .catch((err)=>{
-//     console.log("Error:  ",err);
+// }
+
+
+
+//! Axios ----------------------------------------------------------------------
+
+
+
+// let btn = document.querySelector('button');
+
+// btn.addEventListener('click', async()=>{
+//     let fact  = await getFact();
+//     let p = document.querySelector("#result");
+//     p.innerText = fact;
+// });
+
+
+
+// let url = "https://catfact.ninja/fact";
+
+// async function getFact(){
+//     try{
+//         let res = await axios.get(url);
+//         return res.data.fact;
+//     } catch(err){
+//         console.log("Error --> ",err);
+//         return "No Fact Found"
+        
+//     }
+// }
+
+
+
+
+
+//  let btn = document.querySelector('button');
+//  let url2 = "https://dog.ceo/api/breeds/image/random";
+
+// btn.addEventListener('click', async()=>{
+//     let link  = await getImage();
+//     let img = document.querySelector("#result");
+//     img.setAttribute("src",link)
+// });
+
+
+
+
+// async function getImage(){
+//     try{
+//         let res = await axios.get(url2);
+//         return res.data.message;
+        
+//     } catch(err){
+//         console.log("Error --> ",err);
+//         return "Image Not Found"
+        
+//     }
+// }
+
+
+
+let btn = document.querySelector("button");
+btn.addEventListener('click', async()=>{
+    let country = document.querySelector("input").value;
+    console.log(country);
+    // let colleges = await getCollege(country);
+    // console.log(colleges);
     
-// })
-async function getFact(){
-    try{
-    let res = await fetch(url);
-    let data =  await res.json();
-    console.log(data.fact);
-    }catch(err){
-        console.log(err);
+    let colArr = await getCollege(country);
+    Show(colArr);
+   
+})
+
+function Show(colArr){
+    let list = document.querySelector("#list");
+    list.innerText= "";
+    for(col of colArr){
+        let li = document.createElement('li');
+        li.innerText = col.name;
+        list.appendChild(li);
         
     }
-    console.log("Bye....................");
-    
+}
+
+
+
+
+let url = "http://universities.hipolabs.com/search?name=";
+
+async function getCollege(country){
+    try{
+        let res = await axios.get(url+country);
+       return res.data;
+        
+    } catch(err){
+        console.log("Error --> ",err);
+        return [];
+        
+    }
 }
