@@ -3,8 +3,8 @@ console.log("JavaScript Loaded");
 
 
 
-Day_12 = {
-  subject:" Terminal",
+Day_13 = {
+  subject:" Nothing",
   topic:"Commands",
   id:123010,
   status:200
